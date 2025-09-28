@@ -1,69 +1,80 @@
-# React + TypeScript + Vite
+# 🛒 E-commerce Frontend
+<img width="1886" height="857" alt="Screenshot 2025-09-28 130704" src="https://github.com/user-attachments/assets/99c4176e-d935-4b9d-b0c1-acdd6d2f2398" />
+<img width="1739" height="848" alt="Screenshot 2025-09-28 130742" src="https://github.com/user-attachments/assets/d8e5f0a5-c272-4963-b272-053570396493" />
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+This is a modern **E-commerce frontend application** built using **React, Vite, and TypeScript**.  
+It provides a fast, scalable, and maintainable architecture for building online shopping platforms.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Tech Stack
+- **React** – Frontend library for building UI components
+- **Vite** – Fast build tool and development server
+- **TypeScript** – Type-safe JavaScript for better scalability
+- **CSS / Tailwind 
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 📂 Project Structure
+ecommer/
+│
+├── public/ # Static assets
+│ └── vite.svg
+│
+├── src/ # Main source code
+│ ├── components/ # Reusable UI components
+│ ├── pages/ # Page-level components (e.g., Home, Product, Cart)
+│ ├── contest/ # (Possible context/state management folder)
+│ ├── App.tsx # Main app entry
+│ ├── main.tsx # App bootstrap
+│ └── index.css # Global styles
+│
+├── .gitignore # Git ignored files
+├── package.json # Dependencies and scripts
+├── tsconfig.json # TypeScript configuration
+├── vite.config.ts # Vite configuration
+└── README.md # Project documentation
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+yaml
+Copy code
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## ⚙️ Installation & Setup
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/USERNAME/ecommer.git
+   cd ecommer
+Install dependencies
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+bash
+Copy code
+npm install
+Start development server
+
+bash
+Copy code
+npm run dev
+Build for production
+
+bash
+Copy code
+npm run build
+Preview production build
+
+bash
+Copy code
+npm run preview
+🌟 Features (Planned / Existing)
+🔹 Modern UI with React + Vite
+
+🔹 TypeScript for maintainability
+
+🔹 Component-based architecture
+
+🔹 Pages structure for scalability
+
+🔹 Future integration with backend APIs
+
