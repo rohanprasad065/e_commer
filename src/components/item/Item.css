@@ -1,0 +1,97 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* ✅ Adds spacing between image, name, and prices */
+  padding: 15px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  background-color: #fff;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.item:hover {
+  transform: scale(1.02);
+}
+
+.item img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.item p {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+  color: #333;
+}
+
+.item-prices {
+  display: flex;
+  justify-content: center;
+  gap: 12px; /* ✅ Adds spacing between new and old price */
+}
+
+.item-price-new {
+  color: green;
+  font-weight: bold;
+}
+
+.item-price-old {
+  color: gray;
+  text-decoration: line-through;
+}
+@media (max-width: 1280px) {
+  .item {
+    width: 220px;
+    font-size: 14px;
+  }
+
+  .item img {
+    width: 220px;
+  }
+
+  .item-price-old {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .item {
+    width: 170px;
+    font-size: 13px;
+  }
+
+  .item img {
+    width: 170px;
+  }
+
+  .item-price-old {
+    font-size: 13px;
+  }
+}
+@media (max-width: 800px) {
+  .item {
+    width: 120px;
+    font-size: 12px;
+  }
+
+  .item img {
+    width: 120px;
+  }
+
+  .item-price-old {
+    font-size: 12px;
+  }
+}
+@media (max-width: 500px) {
+  .item {
+    width: 160px;
+    
+  }
+
+  .item img {
+    width: 160px;
+  }
+}
